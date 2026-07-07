@@ -12,22 +12,33 @@ export const resumeData = {
     { label: "LinkedIn", value: "linkedin.com/in/ahmadmalik34", href: "https://linkedin.com/in/ahmadmalik34" },
   ],
   summary:
-    "Final-year Computer Science student with proven skills in React.js and developing expertise in the Django framework. Strong foundation in frontend and backend web development with an emphasis on clean, efficient code and user experience. Passionate about continuous learning and applying new technologies to solve real-world problems through innovative software solutions.",
+    "Computer Science graduate skilled in web application development with React.js on the front end and Django on the back end. Proficient in building RESTful APIs, managing databases, and creating interactive UI components. Committed to writing maintainable code and continuously improving through real-world development experience.",
   experience: [
     {
       company: "CloudTHQ",
-      role: "Front-end Web Developer",
+      role: "Frontend Web Developer Intern",
       period: "Jun 2025 — Aug 2025",
       bullets: [
-        "Ensured user satisfaction and retention by developing responsive logistics dashboards with real-time tracking capabilities and intuitive multi-layout navigation systems.",
-        "Built and maintained enterprise web applications using React, TypeScript, Material-UI and modern development frameworks to deliver scalable business solutions.",
+        "Developed responsive logistics dashboards with real-time shipment tracking and multi-layout navigation, improving user satisfaction and retention.",
+        "Built and maintained enterprise web applications using React TypeScript, Material-UI and Vite, delivering scalable business solutions for cargo management workflows.",
+        "Collaborated in an Agile team environment, contributing to sprint planning, code reviews, and deployment of production features.",
       ],
     },
   ],
   projects: [
     {
+      name: "AI-Powered Multilingual Video Translation System",
+      meta: "Django & React · Final Year Project",
+      bullets: [
+        "Built a full-stack AI video translation platform using a React 19 + Vite frontend and Django REST Framework backend, enabling users to upload videos, translate spoken content between English and Urdu, and download voice-cloned audio — all with real-time progress tracking via polling-based updates.",
+        "Integrated state-of-the-art deep learning models including Meta's SeamlessM4T v2 Large (~9.7 GB) for direct speech-to-speech translation preserving prosody and emotion, OpenVoice v2 for voice cloning via tone color conversion with 256-dimensional speaker embeddings, and Silero VAD for timestamp-accurate speech segmentation.",
+        "Engineered a multi-module processing pipeline with FFmpeg-based audio extraction, segment-by-segment voice cloning with tau-controlled intensity, smart silence preservation, and graceful fallback mechanisms — supporting automatic CPU/GPU detection and efficient memory management.",
+        "Leveraged AI-assisted development throughout the project for code generation, debugging, architecture decisions, and integration of complex ML model pipelines, accelerating development while maintaining code quality.",
+      ],
+    },
+    {
       name: "Logistics & Cargo Management System",
-      meta: "React · TypeScript · Jun 2025 — Aug 2025",
+      meta: "React · Jun 2025 — Aug 2025",
       bullets: [
         "Developed a comprehensive React TypeScript logistics platform with real-time shipment tracking, multi-stage cargo workflow management (destination arrival to final delivery), and AWB search functionality with interactive progress visualization using Material-UI and Vite.",
         "Built a multi-tenant dashboard with role-based permissions featuring staff performance analytics, document generation (PDF/Excel export), delivery note management, and tariff calculation tools with responsive design across three layout modes.",
@@ -37,21 +48,22 @@ export const resumeData = {
   ],
   education: [
     {
-      degree: "Bachelor of Computer Science",
+      degree: "Bachelors in Computer Science",
       school: "University of Central Punjab",
-      period: "2022 — 2026 (Expected)",
+      period: "2022 — 2026",
     },
     {
-      degree: "FSC Pre-Engineering",
+      degree: "FSc Pre-Engineering",
       school: "Punjab Group of Colleges",
       period: "2019 — 2021",
     },
   ],
   skills: [
-    "React",
+    "React JS",
     "Django",
-    "React Native",
-    "Tailwind CSS",
+    "TailwindCSS",
+    "Git/GitHub",
+    "Material UI",
     "Bootstrap",
     "TypeScript / JavaScript",
     "Python",
