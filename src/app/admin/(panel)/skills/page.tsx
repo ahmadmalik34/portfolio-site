@@ -52,9 +52,6 @@ export default async function AdminSkillsPage() {
                   </span>
                   <div className="min-w-0 flex-1">
                     <p className="text-sm font-medium">{skill.name}</p>
-                    <p className="truncate font-mono text-xs text-muted">
-                      {skill.icon || "— monogram fallback"}
-                    </p>
                   </div>
                   <span className="font-mono text-xs text-muted">
                     #{skill.sortOrder}
