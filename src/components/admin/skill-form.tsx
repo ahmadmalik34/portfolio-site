@@ -141,7 +141,7 @@ export function SkillForm({
         </p>
       )}
 
-      <fieldset disabled={isPending} className="space-y-5">
+      <fieldset disabled={isPending || disabled} className="space-y-5">
         {/* Row 1 — name / category / order */}
         <div className="grid gap-4 sm:grid-cols-[1fr_200px_90px]">
           <div>
@@ -294,11 +294,6 @@ export function SkillForm({
             </Link>
           )}
         </div>
-        {disabled && (
-          <p className="text-xs text-muted">
-            Demo mode — connect DATABASE_URL to save changes.
-          </p>
-        )}
       </fieldset>
     </form>
   );

@@ -1,5 +1,4 @@
 import { AdminShell } from "@/components/admin/admin-shell";
-import { DbStatusBanner } from "@/components/admin/db-status";
 import { requireAdmin } from "@/lib/auth/session";
 
 export default async function AdminPanelLayout({
@@ -10,9 +9,6 @@ export default async function AdminPanelLayout({
   await requireAdmin();
 
   return (
-    <AdminShell>
-      <DbStatusBanner />
-      {children}
-    </AdminShell>
+    <AdminShell>{children}</AdminShell>
   );
 }

@@ -36,7 +36,7 @@ export function ResumeForm({ action, disabled }: ResumeFormProps) {
         </p>
       )}
 
-      <fieldset disabled={isPending} className="flex flex-wrap items-center gap-3">
+      <fieldset disabled={isPending || disabled} className="flex flex-wrap items-center gap-3">
         <input
           ref={fileInputRef}
           type="file"
@@ -71,7 +71,6 @@ export function ResumeForm({ action, disabled }: ResumeFormProps) {
       <p className="mt-3 text-xs leading-relaxed text-muted">
         PDF only, max 4 MB. The file is stored in NeonDB, so replacing it works
         on Vercel without redeploying.
-        {disabled && " Demo mode — connect DATABASE_URL to enable uploads."}
       </p>
     </form>
   );

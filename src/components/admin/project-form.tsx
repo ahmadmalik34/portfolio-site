@@ -105,7 +105,7 @@ export function ProjectForm({
         </p>
       )}
 
-      <fieldset disabled={isPending} className="space-y-6">
+      <fieldset disabled={isPending || disabled} className="space-y-6">
         {/* Basics */}
         <div className="rounded-xl border border-line bg-surface p-5 md:p-6">
           <p className="label-mono mb-5 !text-accent">Basics</p>
@@ -457,11 +457,6 @@ export function ProjectForm({
         <Link href="/admin/projects" className="btn btn-outline">
           Cancel
         </Link>
-        {disabled && (
-          <p className="w-full text-xs text-muted">
-            Demo mode — connect DATABASE_URL to save changes.
-          </p>
-        )}
       </div>
     </form>
   );
